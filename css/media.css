@@ -15,7 +15,6 @@ nav{padding: 7px;
 a{color: rgb(230, 235, 238);
 text-decoration: none;
 font-weight: 600;
-margin-inline: 5em;
 }
 
 a:hover{background-color: rgb(165, 190, 145);
@@ -28,17 +27,12 @@ margin-left: 50px;
 display:block;
     width:200px;
 height:200px;
-margin-bottom: 0;}
+margin-bottom: 0;
+margin-top: 40px;}
 
-
-.section-header figcaption{margin-left: 40px;
-font-size: large;
-    font-weight: 700;
-    text-transform: capitalize;}
-
-.section-header p{padding: 40px;
-text-shadow: 1px 1px rgb(165, 190, 145);}
-
+.section-headerP{padding: 40px;
+text-shadow: 1px 1px rgb(165, 190, 145);
+}
 
 img,video {display:block;
     width:200px;
@@ -48,13 +42,14 @@ margin: 30px;
 box-shadow: 2px 2px 2px rgb(61, 60, 60);}
 
 p{text-align: center;
-font-size: x-large;}
+font-size: medium;}
 
 .section-one{display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 20px;
+    margin:0 20px;
     padding: 20px;
+    width: 600px;
 background-color: rgb(162, 189, 168);
 border-radius: 10px;
 box-shadow: 5px 5px 5px black;}
@@ -65,6 +60,14 @@ flex-direction: column;}
 .media-content h2{margin-left: 25px;
 text-align: justify;}
 
+.section-one p{width: 600px;
+    height: 250px;
+    text-align: center;
+    font-size: large;
+    margin-left: 50px;
+    padding: 40px;
+font-weight: 800;}
+
 
 .section-two{display: flex;
     flex-direction: row;
@@ -73,28 +76,63 @@ margin: 20px;
 padding: 20px;
 background-color: rgb(80, 133, 83);
 border-radius: 10px;
-box-shadow: 5px 5px 5px black;}
+box-shadow: 5px 5px 5px black;
+width:600px;}
 
+.section-two p{width: 600px;
+    height: 250px;
+    text-align: center;
+    font-size: large;
+    padding: 50px;
+font-weight: 800;}
 
 .section-three{display: flex;
     flex-direction: row;
     align-items: center;
 margin: 20px;
 padding: 20px;
-width: 97%;
+width: 600px;
 background-color: rgb(190, 233, 189);
 border-radius: 10px;
 box-shadow: 5px 5px 5px black;}
 
-.asides{display: flex;
-flex-direction: row;
-margin: 20px;}
+.section-three p{width: 600px;
+    text-align: center;
+    font-size: large;
+    padding: 50px;
+font-weight: 800;}
 
 .section-four{display: flex;
     flex-direction: row;
     align-items: center;
 margin: 20px;
 padding: 20px;
+width: 600px;
 background-color:  rgb(93, 126, 95);
 border-radius: 10px;
 box-shadow: 5px 5px 5px black;}
+
+.section-four p{width: 600px;
+    text-align: justify;
+    font-size: large;
+    padding: 50px;
+font-weight: 800;}
+
+
+@media screen and (min-width: 300px) {
+    header{width:100%;
+        display: flex;
+    position: fixed;
+top:0;
+height:57px}
+
+nav{display:flex;}
+
+a {display:flex;
+    height: 40px;
+text-align: center;
+margin-inline: 2rem;
+}
+
+.section-header{width: 650px;
+    height: 270px;}}
